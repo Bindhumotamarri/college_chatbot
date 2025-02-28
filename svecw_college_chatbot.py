@@ -19,7 +19,7 @@ df=df.fillna("")
 df['Question']=df['Question'].str.lower()
 df['Answer']=df['Answer'].str.lower()
 
-vectorizer=TfidVectorizer()
+vectorizer=TfidfVectorizer()
 question_vectors= vectorizer.fit_transform(df['Question'])
 
 API_KEY="AIzaSyB7HUQCuS1HizQ_GMcyzf7-R5ZYtW1-nRM"
