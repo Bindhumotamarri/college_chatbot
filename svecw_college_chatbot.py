@@ -17,7 +17,7 @@ except Exception as e:
   st.stop()
 df=df.fillna("")
 df['Question']=df['Question'].str.lower()
-df['Answer']=f['Answer'].str.lower()
+df['Answer']=df['Answer'].str.lower()
 
 vectorizer=TfidVectorizer()
 question_vectors= vectorizer.fit_transform(df['Question'])
